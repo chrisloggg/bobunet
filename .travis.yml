@@ -1,0 +1,9 @@
+# before_install:
+# - sudo apt -qq update
+# - sudo apt install -y jq
+env:
+- STAGE=1
+- STAGE=2
+- STAGE=3
+script:
+- . ./run.sh
